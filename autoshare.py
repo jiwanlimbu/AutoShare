@@ -21,7 +21,7 @@ from selenium import *
 
 
 try:
-	linky = "http://computerworld.com"
+	linky = "http://networkworld.com"
 	page = UR.urlopen(linky)
 except IOError:
 	print("URL Not Found")
@@ -53,8 +53,8 @@ driver.get("https://www.linkedin.com/")
 
 print "Destination website fired-up!"
 
-linkedinUsername = "jiwan.ninglekhu@hotmail.com"
-linkedinPassword = "Limbu123"
+linkedinUsername = "Your linkedinUsername"
+linkedinPassword = "Your linkedinPassword"
 emailFieldID   = "login-email"
 passFieldID    = "login-password"
 loginButtonName = "submit"
@@ -86,4 +86,3 @@ shareButton1Element.click()
 print "Submit button clicked"
 driver.implicitly_wait(30)
 driver.close()
-
